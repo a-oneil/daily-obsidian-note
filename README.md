@@ -22,7 +22,7 @@ slack_default_channel="channel-name"
 
 ```
 ##### Obsidian Notes #####
-0 */4 * * * /home/path_to_project/venv/bin/python3 /home/path_to_project/daily_obsidian_note.py 2>&1
+1 0 * * * /home/path_to_project/venv/bin/python3 /home/path_to_project/daily_obsidian_note.py 2>&1
 ```
 
 6. Review the script and make changes if you wish
