@@ -3,7 +3,7 @@ A fork of [jamietr1](https://github.com/jamietr1/obsidian-automation)'s project 
 ## Setup:
 1. `python3 -m venv ./venv`
 2. `./venv/bin/python3 -m pip install -r requirements.txt`
-3. Make a "Projects", "Reading List", "Goals" project in todoist.
+3. Make a "Projects", "Reading List", "Goals" and "Learning" project in todoist.
     
     * Go to todoist.com and login
     * Make your projects
