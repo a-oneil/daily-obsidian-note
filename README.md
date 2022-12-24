@@ -17,6 +17,7 @@ todoist_api_key="111111"
 goals_project_id="111111"
 projectsideas_project_id="111111"
 readinglist_project_id="111111"
+learning_project_id="111111"
 slack_bot_token="xyz-123"
 slack_default_channel="channel-name"
 ```
