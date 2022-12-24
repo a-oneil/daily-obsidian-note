@@ -13,7 +13,6 @@ A fork of [jamietr1](https://github.com/jamietr1/obsidian-automation)'s project 
 ```
 daily_notes_root="/path/to/notes"
 obsidian_sharelink='obsidian://open?vault=Notes&file=Daily%2F'
-weather_zip="Cleveland+Ohio"
 todoist_api_key="111111"
 goals_project_id="111111"
 projectsideas_project_id="111111"
