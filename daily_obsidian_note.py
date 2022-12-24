@@ -1,5 +1,5 @@
 #!/venv/bin/python3
-import arrow, requests, os, time, traceback
+import arrow, os, time, traceback
 from todoist_api_python.api import TodoistAPI
 from dotenv import dotenv_values
 from datetime import datetime
@@ -30,12 +30,6 @@ def get_link_for_file(file, link_text=""):
         return "[[" + file.replace(".md", "") + "|" + link_text + "]]"
     else:
         return "[[" + file.replace(".md", "") + "]]"
-
-def get_weather(location):
-    headers = requests.utils.default_headers()
-    payload = {'format': '2'}
-    r = requests.get("http://wttr.in/" + location, params=payload, headers=headers)
-    return r.text.strip()
 
 def get_daily_notes_filename(offset=0):
     file_date = arrow.now()
@@ -87,16 +81,13 @@ def create_task(taskname,due_date,urgency):
 
 def main():
     daily_notes_file = os.path.join(daily_notes, get_daily_notes_filename())
-    # if not os.path.exists(daily_notes_file):
-    #     print("File already exists. Not overwriting...")
-    # else:
+
     print(f"Generating daily notes file {os.path.basename(daily_notes_file)}...")
     with open(daily_notes_file, 'w+') as note:
         nav_bar = get_link_for_file(get_daily_notes_filename(offset=-1))
         nav_bar += " | " + get_link_for_file(get_daily_notes_filename(offset=1))
         nav_bar += "\n" + tag
-        nav_bar += "\n" + get_weather(weather_location)
-        nav_bar += "\n---"
+        nav_bar += "\n\n---"
         note.write(nav_bar)
         note.write("\n\n## To-Do:\n")
         get_todays_tasks(note)

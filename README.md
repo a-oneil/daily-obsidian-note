@@ -36,7 +36,7 @@ slack_default_channel="channel-name"
 ```
 [[2022-12-22.Thu]] | [[2022-12-24.Sat]]
 #Daily-Notes
-⛅️  🌡️+43°F 🌬️↖19mph
+
 ---
 
 ## To-Do:
