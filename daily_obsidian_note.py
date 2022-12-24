@@ -10,7 +10,6 @@ from slack_sdk import WebClient
 config=dotenv_values(__file__.replace("daily_obsidian_note.py",".env"))
 today = datetime.now().strftime("%Y-%m-%d")
 daily_notes = config['daily_notes_root']
-weather_location = config['weather_zip']
 tag = config['tag']
 
 ''' Todoist Config '''
