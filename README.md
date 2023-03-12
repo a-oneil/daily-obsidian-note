@@ -1,6 +1,7 @@
+# Daily Obsidian Note Generator
 A fork of [jamietr1](https://github.com/jamietr1/obsidian-automation)'s project to create a new daily note within your Obsidian vault. I made some changes to his code to list Todoist tasks that are due the same day that the note is created. It will also create a new task on Todoist with a link to the Obsidian note (due date will be set to "today") so you can make sure you complete your note for the day. 
 
-## Setup:
+## Setup
 1. `python3 -m venv ./venv`
 2. `./venv/bin/python3 -m pip install -r requirements.txt`
 3. Make a "Projects", "Reading List", "Goals" and "Learning" project in todoist.
@@ -32,7 +33,7 @@ slack_default_channel="channel-name"
 6. Review the script and make changes if you wish
 
 
-## Template Example:
+## Template Example
 ```
 [[2022-12-22.Thu]] | [[2022-12-24.Sat]]
 #Daily-Notes
