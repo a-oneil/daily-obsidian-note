@@ -1,5 +1,15 @@
 # Daily Obsidian Note Generator
-A fork of [jamietr1](https://github.com/jamietr1/obsidian-automation)'s project to create a new daily note within your Obsidian vault. I made some changes to his code to list Todoist tasks that are due the same day that the note is created. It will also create a new task on Todoist with a link to the Obsidian note (due date will be set to "today") so you can make sure you complete your note for the day. 
+I recently learned about the powerful note-taking app, Obsidian. It changed the way I've been taking notes but something was missing... I wanted Todoist tasks inside of my daily Obsidian note so I could collect my thoughts and track my accomplishments of the day. 
+
+If you don't know, Obsidian is a knowledge base application that works on local Markdown files. You can use it to take notes, plan a research paper or use it for mathematics but the thing I use Obsidian for the most is to create daily notes.
+
+Every morning at 12:01AM, I have a new note created for me in my Obsidian for the day filled with my daily tasks from Todoist and a section for my thoughts of the day. This is accomplished via a python project I wrote called Daily Obsidian Note. Generic name right?
+
+My code started as a fork of [jamietr1](https://github.com/jamietr1/obsidian-automation) daily note generator but I ended up rewriting alot of it to match what I desired from a daily note. Such as, using Todoist as the primary "source of truth" of tasks instead of relying on past notes.
+
+The script will query the Todoist api and retrieve tasks that are due the same day that the note is created. It also has the ability to query a Todoist project and return the list of tasks in that project.
+
+Once the note has been created, it will also create a new task on Todoist with a link to the Obsidian note (the due date will be set to "today") so you can make sure you complete your note for the day from all of your devices.
 
 ## Setup
 1. `python3 -m venv ./venv`
@@ -31,7 +41,6 @@ slack_default_channel="channel-name"
 ```
 
 6. Review the script and make changes if you wish
-
 
 ## Template Example
 ```
