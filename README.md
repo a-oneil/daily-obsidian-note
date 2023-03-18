@@ -24,11 +24,11 @@ Once the note has been created, it will also create a new task on Todoist with a
 ```
 daily_notes_root="/path/to/notes"
 obsidian_sharelink='obsidian://open?vault=Notes&file=Daily%2F'
-weather_zip="Cleveland+Ohio"
 todoist_api_key="111111"
 goals_project_id="111111"
 projectsideas_project_id="111111"
 readinglist_project_id="111111"
+learning_project_id="111111"
 slack_bot_token="xyz-123"
 slack_default_channel="channel-name"
 ```
